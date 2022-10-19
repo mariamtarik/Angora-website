@@ -1,0 +1,534 @@
+.setting {
+    position: fixed;
+    left: 0;
+    top: 20%;
+    z-index: 2222;
+}
+
+.arrows {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    z-index: 2222;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+}
+
+.arrow-l {
+   overflow: hidden;
+    position: relative;
+}
+.layer-left{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 120%;
+    background-color: rgba(255,255,255,0.5);
+  
+}
+.arrow-left{
+    border-bottom: solid 1px rgba(255,255,255,0.5) ;
+}
+.arrow-l .layer-left{
+    transition:  right .5s;
+}
+
+.arrow-l:hover .layer-left{
+right: 0;
+}
+.arrow-l .arrow-left{
+    transition:  color .5s;
+}
+.arrow-l:hover .arrow-left{
+    color: red;
+  }
+  .arrow-r {
+    overflow: hidden;
+     position: relative;
+ }
+ .layer-right{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 120%;
+     background-color: rgba(255,255,255,0.5);
+   
+ }
+ .arrow-r .layer-right{
+     transition: left 1s;
+ }
+ 
+ .arrow-r:hover .layer-right{
+ left: 0;
+ }
+ .arrow-r .arrow-right{
+     transition:  color .5s;
+ }
+ .arrow-r:hover .arrow-right{
+     color: red;
+   }
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    line-height: 1.5;
+}
+
+nav {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 20px;
+}
+
+.navbar a {
+    color: white;
+}
+
+.nav-color:hover a {
+    color: red;
+}
+
+.home-color a {
+    color: red;
+}
+
+.image-nav {
+    width: 30px;
+}
+
+nav {
+    position: relative;
+}
+
+nav::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.carousel-caption {
+   
+    bottom: 35%;
+
+}
+
+.scroll {
+    width: 30px;
+    height: 50px;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 20px;
+    z-index: 4444;
+}
+
+@keyframes moveScroll {
+    0% {
+        bottom: 35px;
+        
+    }
+    20% {
+        bottom: 30px;
+    }
+    40% {
+        bottom: 25px;
+        width: 8px;
+        height: 8px;
+    }
+    60% {
+        bottom: 20px;
+        width: 5px;
+        height: 5px;
+       
+    }
+    80% {
+        bottom: 15px;
+       width: 3px;
+       height: 3px;
+    }
+    100%{
+        bottom: 10px;
+        width: 1px;
+        height: 1px;
+    }
+}
+
+.scroll::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moveScroll 1.5s infinite;
+}
+
+
+
+.title h2 {
+    font-size: 90px;
+    font-weight: 700;
+    color: #f1f1f1;
+}
+
+.title h3 {
+    font-size: 35px;
+    font-weight: 800;
+    padding-top: 30px;
+}
+
+.paragh {
+    font-size: 20px;
+    color: #999;
+    line-height: 1.5em;
+    width: 60%;
+}
+
+.progress {
+    overflow: hidden;
+    height: auto;
+}
+
+.progress-bar {
+    background-color: #f25454;
+    height: 5px;
+    border-radius: 0 2px 2px 0;
+}
+
+.progress-bar1 {
+    animation: move-prograss1 1s;
+}
+
+@keyframes move-prograss1 {
+    0% {
+        width: 0%;
+    }
+    30% {
+        width: 20%;
+    }
+    50% {
+        width: 40%;
+    }
+    80% {
+        width: 60%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+.progress-bar2 {
+    animation: move-prograss2 1s;
+}
+
+@keyframes move-prograss2 {
+    0% {
+        width: 0%;
+    }
+    30% {
+        width: 20%;
+    }
+    50% {
+        width: 50%;
+    }
+    70% {
+        width: 70%;
+    }
+    85% {
+        width: 85%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+.progress-bar3 {
+    animation: move-prograss3 1s;
+}
+
+@keyframes move-prograss3 {
+    0% {
+        width: 0%;
+    }
+    30% {
+        width: 20%;
+    }
+    50% {
+        width: 40%;
+    }
+    80% {
+        width: 60%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+.progress-bar4 {
+    animation: move-prograss4 1s;
+}
+
+@keyframes move-prograss4 {
+    0% {
+        width: 0%;
+    }
+    30% {
+        width: 20%;
+    }
+    50% {
+        width: 45%;
+    }
+    80% {
+        width: 60%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+.progress-value {
+    text-align: right;
+    font-weight: 500;
+}
+
+.about-par {
+    font-size: 16px;
+   
+}
+
+.content {
+    overflow: hidden;
+}
+
+.picture-inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.content .picture-inner img {
+    transition: transform 1s;
+}
+
+.content:hover .picture-inner img {
+    transform: scale(1.2, 1.2);
+}
+
+.picture-layer {
+    background-color: rgba(242, 84, 84, 0.85);
+    ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.picture-layer a {
+    color: white;
+    padding-right: 30px;
+    font-size: 18px;
+}
+
+.content .picture-layer {
+    transition: opacity 1s;
+}
+
+.content:hover .picture-layer {
+    opacity: 1;
+}
+
+.content .content-h3 {
+    transition: color 1s;
+}
+
+.content:hover .content-h3 {
+    color: #f25454;
+}
+
+.butn {
+    background-color: #f25454;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.serv-content:hover h3 {
+    color: #f25454;
+}
+
+.serve-icon {
+    font-size: 25px;
+    color: #f25454;
+}
+
+.bg-gray {
+    background-color: rgb(253, 250, 251);
+}
+
+.carousel-indicators li {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    text-indent: 0;
+}
+
+.carousel-item p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.86em;
+}
+
+.bord {
+    position: relative;
+}
+
+.bord::after {
+    content: " ";
+    width: 20%;
+    height: 1px;
+    position: absolute;
+    top: 120%;
+    left: 40%;
+    background-color: #666;
+    transition: all 1s;
+}
+
+.title:hover .bord::after {
+    width: 40%;
+    left: 30%
+}
+
+.line {
+    position: relative;
+}
+
+.line::after {
+    content: " ";
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: rgb(192, 182, 182);
+}
+
+.contact-pra {
+    color: #666;
+}
+
+.contact-color:hover {
+    color: #f25454;
+}
+
+.contact-icon {
+    color: #f25454;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+input[type=text]:focus {
+    border-color: #f25454;
+    box-shadow: 0 0 5px #f25454;
+}
+
+input[type=email]:focus {
+    border-color: #f25454;
+    box-shadow: 0 0 5px #f25454;
+}
+
+textarea:focus {
+    border-color: #f25454 !important;
+    box-shadow: 0 0 5px #f25454 !important;
+}
+
+.contact2 {
+    background-color: rgb(90, 89, 89);
+    position: relative;
+}
+
+.icona-contact {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 46px;
+    background-color: rgba(242, 84, 84, 0.5);
+}
+
+.icona-contact:hover {
+    background-color: #f25454;
+}
+
+.icona-contact i {
+    position: relative;
+    left: 16px;
+    top: 10px;
+}
+
+.buten {
+    background-color: #f25454;
+}
+
+.button {
+    background-color: transparent;
+    border: solid 1px #b0b0b0;
+    border-radius: 2px;
+}
+
+.text-pra {
+    color: #b0b0b0;
+}
+
+.text {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.text:hover {
+    color: #f25454;
+    text-decoration: none;
+}
+
+.button:hover {
+    border: solid 1px #f25454;
+}
+
+.icon-foot:hover {
+    color: #f25454;
+}
+
+.par-foot {
+    color: #b0b0b0;
+}
+
+.span-foot {
+    font-weight: 500;
+    color: #fff;
+}
+
+.span-foot:hover {
+    color: #f25454;
+}
